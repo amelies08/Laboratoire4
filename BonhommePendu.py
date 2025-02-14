@@ -9,7 +9,7 @@ mauvais = 0 #mauvaises reponses
 x = False
 z = False
 
-while not x or not z: #tant que guess n'est pas une lettre
+while not x or not z: #tant que guess n'est pas une lettre et qu'il n'y a pas seulement une lettre
     guess = input() #devine la lettre
     x = guess.isalpha() #est-ce que guess est une lettre
     z = len(guess) == 1 #est-ce qu'il y a seulement une lettre
